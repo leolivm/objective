@@ -119,11 +119,19 @@ export const Search = styled.div`
   }
 `;
 
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
+
 export const List = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 24px;
+  position: relative;
 
   a {
     width: 100%;
@@ -195,8 +203,10 @@ export const HeroSeries = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 25%;
   text-align: left;
+
+  position: absolute;
+  left: 31%;
 
   span {
     font-size: 14px;
@@ -210,13 +220,45 @@ export const HeroEvents = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 25%;
   text-align: left;
+
+  position: absolute;
+  left: 74%;
 
   span {
     font-size: 14px;
     color: #555;
     font-family: PT Sans;
     font-weight: normal;
+  }
+`;
+
+export const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  background: #fff;
+
+  a {
+    text-decoration: none;
+    max-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    padding: 8px 16px;
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    color: #555555;
+    font-size: 14px;
+    font-family: PT Sans;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background: #167abc;
+      color: #fff;
+    }
   }
 `;
