@@ -23,7 +23,6 @@ Technologies that I used to develop this web client
 
 - [ReactJS](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Yup](https://github.com/jquense/yup)
 - [Styled Components](https://styled-components.com/)
 - [Axios](https://github.com/axios/axios)
 - [Prettier](https://prettier.io/)
