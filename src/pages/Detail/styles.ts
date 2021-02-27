@@ -74,9 +74,6 @@ export const Content = styled.div`
   flex: 1;
   padding: 16px;
 
-  position: absolute;
-  left: 0;
-  right: 0;
   margin: 0 auto;
   background: #fff;
   max-width: 600px;
@@ -90,8 +87,22 @@ export const Content = styled.div`
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   }
 
+  @media (max-width: 615px) {
+    margin: 0 20px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   ul {
     display: flex;
+
+    @media (max-width: 615px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;
 
@@ -102,8 +113,17 @@ export const TopInfo = styled.div`
   img {
     width: 250px;
     border-radius: 4px;
-    margin: 0 8px 8px 0;
+    margin-right: 16px;
     border: 4px solid #555555;
+
+    @media (max-width: 615px) {
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+  }
+
+  @media (max-width: 615px) {
+    align-self: unset;
   }
 `;
 
@@ -115,6 +135,11 @@ export const Name = styled.h5`
 
 export const History = styled.div`
   display: flex;
+
+  @media (max-width: 615px) {
+    align-self: unset;
+    text-align: center;
+  }
 
   div {
     display: flex;

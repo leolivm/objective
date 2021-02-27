@@ -121,9 +121,9 @@ const Seach: React.FC = () => {
 
         <List>
           <TitleContent>
-            <Title>Personagem</Title>
-            <Title>Séries</Title>
-            <Title>Eventos</Title>
+            <Title>{currentHeroes.length ? "Personagem" : null}</Title>
+            <Title>{currentHeroes.length ? "Séries" : null}</Title>
+            <Title>{currentHeroes.length ? "Eventos" : null}</Title>
           </TitleContent>
 
           <Wrapper>

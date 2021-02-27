@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  @media (max-width: 515px) {
+    min-width: 515px;
+  }
+`;
 
 export const Header = styled.header`
   height: 64px;
@@ -10,6 +14,11 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 515px;
+
+  @media (max-width: 580px) {
+    margin-bottom: 24px;
+  }
 
   nav {
     max-width: 1245px;
@@ -32,7 +41,7 @@ export const Profile = styled.div`
     display: flex;
     align-items: center;
 
-    @media (max-width: 450px) {
+    @media (max-width: 580px) {
       position: relative;
       flex-direction: column;
       justify-content: center;
@@ -43,7 +52,7 @@ export const Profile = styled.div`
     strong {
       margin-right: 8px;
 
-      @media (max-width: 450px) {
+      @media (max-width: 580px) {
         margin: 0;
       }
     }
@@ -58,7 +67,7 @@ export const Profile = styled.div`
       background: #f5f5f5;
       border-radius: 4px;
 
-      @media (max-width: 450px) {
+      @media (max-width: 580px) {
         position: absolute;
         right: -50px;
       }
@@ -73,6 +82,19 @@ export const Content = styled.div`
   font-weight: bold;
   padding: 0 113px;
   min-height: 80vh;
+
+  h1 {
+    @media (max-width: 580px) {
+      font-size: 24px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 580px) {
+    padding: 0 24px;
+  }
 `;
 
 export const Form = styled.form`
@@ -83,6 +105,11 @@ export const Search = styled.div`
   margin: 16px 0 40px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 580px) {
+    align-items: center;
+    margin: 24px 0 32px;
+  }
 
   span {
     font-size: 16px;
@@ -110,6 +137,10 @@ export const Search = styled.div`
 
       &:focus {
         border: 0.5px solid #d9d9d9;
+      }
+
+      @media (max-width: 580px) {
+        width: 327px;
       }
     }
 
@@ -158,10 +189,30 @@ export const Title = styled.h4`
 
   &:nth-child(2) {
     width: 17%;
+
+    @media (max-width: 1280px) {
+      width: 12%;
+    }
+
+    @media (max-width: 1150px) {
+      width: 9%;
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
   }
 
   &:nth-child(3) {
     width: 25%;
+
+    @media (max-width: 1100px) {
+      width: 14%;
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
   }
 `;
 
@@ -179,6 +230,10 @@ export const HeroWrapper = styled.div`
 
   &:hover {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  @media (max-width: 580px) {
+    padding: 12px 16px;
   }
 `;
 
@@ -210,6 +265,22 @@ export const HeroSeries = styled.div`
   position: absolute;
   left: 31%;
 
+  @media (max-width: 1280px) {
+    left: 35%;
+  }
+
+  @media (max-width: 1150px) {
+    left: 37%;
+  }
+
+  @media (max-width: 1100px) {
+    left: 42%;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+
   span {
     font-size: 14px;
     color: #555;
@@ -226,6 +297,14 @@ export const HeroEvents = styled.div`
 
   position: absolute;
   left: 74%;
+
+  @media (max-width: 1100px) {
+    left: 83%;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 
   span {
     font-size: 14px;
@@ -275,6 +354,10 @@ export const Footer = styled.footer`
       background: #209df0;
       color: #fff;
     }
+  }
+
+  @media (max-width: 515px) {
+    min-width: 515px;
   }
 `;
 

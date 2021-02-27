@@ -32,7 +32,6 @@ const Detail: React.FC = () => {
       );
 
       setData(response.data.data.results);
-      console.log(response.data.data.results);
     };
 
     getHeroData();
@@ -76,7 +75,7 @@ const Detail: React.FC = () => {
                   {hero.stories.items ? (
                     hero.stories.items
                       .slice(0, 3)
-                      .map((item: any) => <p>{item.name}</p>)
+                      .map((item: any) => <p key={item.name}>{item.name}</p>)
                   ) : (
                     <p>-</p>
                   )}
