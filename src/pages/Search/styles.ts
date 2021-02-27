@@ -72,6 +72,7 @@ export const Content = styled.div`
   font-family: PT Sans Caption;
   font-weight: bold;
   padding: 0 113px;
+  min-height: 80vh;
 `;
 
 export const Form = styled.form`
@@ -196,6 +197,7 @@ export const HeroCharacter = styled.div`
     font-weight: bold;
     color: #555;
     margin-left: 24px;
+    max-width: 230px;
   }
 `;
 
@@ -240,6 +242,19 @@ export const Footer = styled.footer`
   height: 90px;
   background: #fff;
 
+  ul {
+    list-style: none;
+    display: flex;
+
+    button {
+      background: none;
+      color: #8e8e8e;
+      border: none;
+      font-weight: bold;
+      margin: 0 8px;
+    }
+  }
+
   a {
     text-decoration: none;
     max-width: 40px;
@@ -257,8 +272,22 @@ export const Footer = styled.footer`
     transition: 0.2s ease-in-out;
 
     &:hover {
-      background: #167abc;
+      background: #209df0;
       color: #fff;
     }
   }
+`;
+
+export const NoResult = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #f9f9f9;
+  font-size: 14px;
+  font-weight: normal;
+  box-shadow: 0px 0px 5px #00000033;
+  border-radius: 4px;
+  padding: 20px 24px;
+  transition: box-shadow 0.2s ease-in-out;
 `;
