@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  React Native Application for Objective project
+  React Application for Objective project
 </h3>
 
 <p align="center">
